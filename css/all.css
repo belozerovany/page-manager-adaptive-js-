@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;}
+
+                 /* base style */
+
+h2, h3, p, a,td, th { 
+  color:#333;
+  font-family: Arial; }
+
+span   { color:#808080; font-family: Arial;font-size: 11px; line-height: 14px;}
+td     { font-size: 13px; }
+th     { font-weight: bold; text-align: center;}
+a      {color:#005da1; font-size: 14px;}
+.h2{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.h3{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.post{
+  box-sizing: border-box;
+  padding: 16px 16px 20px;
+  border: 1px solid #cfcfcf;
+  background: #f2fbff;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.post:before{
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 100%;
+  transform: translateX(-10%);
+  border: 6px solid #cfcfcf;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
+.post:after{
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 100%;
+  transform: translateX(-10%);
+  border: 5px solid #f2fbff;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+
+.main {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 19px;
+  max-width: 489px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+                  /*  /base style*/
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto; 
+}
+.avatar{
+  background: #fff;
+  padding-top: 24px;
+}
+
+.avatar-header {
+ position: relative;
+}
+.avatar-header h2  {
+  padding-left: 125px;
+  margin-bottom: 7px; 
+}
+.avatar-header span{
+padding-left: 125px;
+margin-bottom: 7px;
+font-size: 12px;
+} 
+.avatar-box {
+  margin-top: 7px; 
+  margin-bottom: 15px;
+  display: block;
+  box-sizing: border-box;
+  width: 90%;
+  background: #fffbc8;
+  border: 1px solid #cecabf;
+  float: right;
+  border-radius: 5px;
+}
+.avatar-box:before {
+  content: '';
+  background: url(../images/avatar.png) no-repeat;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.avatar-box-p{
+padding: 10px 10px 10px 80px;
+font-size: small;
+line-height: initial;
+}
+                       /* services */
+table {
+  margin-bottom: 30px;
+  max-width:320px;
+  height:25px; 
+}
+table tr td:first-child{
+  width: 252px;
+}
+table tr td:last-child{
+  width: 63px;
+}
+table td, table th{
+  padding: 5px;
+}
+thead tr{
+  border-bottom: 1px solid #ccc;
+}
+tbody td:first-child{
+  border-left: 1px solid #ccc;
+}
+/* --------- */
+tbody{
+display: block;
+padding-top: 10px;
+padding-bottom: 10px; 
+}
+tbody th{
+  position: absolute;
+  margin-left: 20px;
+}
+tbody tr{
+  margin-bottom: 2px;
+  position: relative;
+}
+/* ------------- */
+tfoot tr{
+border-top: 1px solid #ccc;
+}
+tfoot th:first-child{
+  text-align: left;
+} 
+.green-td{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgb(177,225,155); /*Old browsers*/
+  background: -webkit-linear-gradient(left, rgba(177,225,155,1) 0%, rgba(177,225,155,1) 100%, rgba(41,137,216,1) 100%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%);
+  background: -o-linear-gradient(left, rgba(177,225,155,1) 0%, rgba(177,225,155,1) 100%, rgba(41,137,216,1) 100%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%);
+  background: linear-gradient(to right, rgba(177,225,155,1) 0%, rgba(177,225,155,1) 100%, rgba(41,137,216,1) 100%, rgba(32,124,202,1) 100%, rgba(125,185,232,1) 100%); /* FF3.6-15 Chrome10-25,Safari5.1-6 W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/
+} 
+.blue-td1{
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px; 
+background: rgb(172,226,248); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(172,226,248,1) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%, rgba(201,201,201,1) 100%, rgba(224,227,229,1) 100%, rgba(172,226,248,1) 100%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(172,226,248,1) 20%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%,rgba(201,201,201,1) 100%,rgba(224,227,229,1) 100%,rgba(172,226,248,1) 100%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(172,226,248,1) 20%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%,rgba(201,201,201,1) 100%,rgba(224,227,229,1) 100%,rgba(172,226,248,1) 100%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ace2f8', endColorstr='#ffffff',GradientType=1 ); /*IE6-9 */
+
+}
+.blue-td2{
+background: rgb(172,226,248); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(172,226,248,1) 12%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 100%, rgba(201,201,201,1) 100%, rgba(224,227,229,1) 100%, rgba(172,226,248,1) 100%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(172,226,248,1) 12%,rgba(255,255,255,1) 12%,rgba(255,255,255,1) 100%,rgba(201,201,201,1) 100%,rgba(224,227,229,1) 100%,rgba(172,226,248,1) 100%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(172,226,248,1) 12%,rgba(255,255,255,1) 12%,rgba(255,255,255,1) 100%,rgba(201,201,201,1) 100%,rgba(224,227,229,1) 100%,rgba(172,226,248,1) 100%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ace2f8', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+ /* /services */
+
+
+/*reviews*/
+.last-reviews{
+  margin-bottom: 20px;
+}
+.last-reviews h2 {
+  display: inline-block;
+}
+.list{
+  float: right;
+}
+.list li{
+  float: left;
+}
+.list .icon{
+  display: inline-block;
+  margin-right: 5px;
+}
+.list-span{
+  color:#333;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 3px;
+}
+.list-span-mg {
+  margin-right: 20px;
+}
+/* /reviews */
+
+/* footer */
+.question-form{
+  text-align: center;
+  background: #f2f2f2;
+  padding: 29px 0 34px;
+}
+textarea {
+  display: block;
+  max-height: 65px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #a9a9a9;
+  background: #fff !important;
+  outline: none;
+  margin-bottom: 34px;
+  color:#333333;
+  font-family: Arial;
+  font-size: 14px;
+
+}
+.submit {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333;
+  background: #fdd639;
+  border-radius: 40px;
+  -moz-border-radius:  40px; /* Firefox */
+  -webkit-border-radius:  40px; /* Safari 4 */
+ -khtml-border-radius: 40px;/* (Safari) */
+  height: 42px;
+  width: 282px;
+  border: none;
+  outline: none;
+}
+.submit:hover{
+background: #ace2f8;
+}
+@media screen and (max-width:480px){
+  .avatar-box-p {
+    padding-left: 90px;
+    font-size: x-small;
+  }
+  .list .icon{
+    padding-left: 0;
+  }
+  .last-reviews h2{
+    display: block;
+  }
+}
+@media screen and (max-width:1960px){
+  .main{
+    max-width: 720px;
+  }
+}
