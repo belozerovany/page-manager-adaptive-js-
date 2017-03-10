@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>consultant</title>
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript"> 
+	/*$(document).ready*/
+	 function newElement() {
+var post = document.createElement("p");
+  post.classList.add('post')а;
+var textarea = document.getElementById("textarea").value;
+  if (textarea === '') {
+   alert("You must write something!");
+  } else {
+   var t = document.createTextNode(textarea);
+   post.appendChild(t);
+  }
+document.getElementById("textarea").value = "";
+  
+ var div = document.createElement("div");
+  div.classList.add('maine-reviews');
+  div.appendChild(post);
+ var review = document.getElementById('reviews');
+  review.appendChild(div);
+}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main avatar">
+			<div class="avatar-header clearfix">
+				<h2 class="h2">Вероника Ростова</h2>
+				<span>Менеджер по продажам</span>
+				<div class="avatar-box">
+					<p class="avatar-box-p">Подберу для вас самые лучшие предложения.</br>
+					Мои услуги абсолютно бесплатны</p>
+				</div>
+				<table  align="right"> 
+					<thead> 
+						<tr> 
+							<td></td> 
+							<td>Услуги</td>  
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td class="green-td">Ручное бронирование</td> 
+							<th>11</th> 
+						</tr> 
+						<tr> 
+							<td class="blue-td1 ">Пакетные туры</td> 
+							<th>3</th>  
+						</tr> 
+						<tr> 
+							<td class="blue-td2">Отели</td> 
+							<th>1</th> 
+						</tr> 
+					</tbody>
+				 	<tfoot>
+					 	<tr> 
+							<th>Всего</th> 
+							<th>15</th> 
+						</tr> 
+				 	</tfoot> 
+				</table>
+			</div>
+			<div id="reviews">
+				<div class="last-reviews clearfix">
+					<h2 class="h2">Последние отзывы</h2>
+					<a href="#">Все отзывы</a>
+					<ul class="list clearfix">
+						<li>
+							<span class="icon">
+								<img src="images/love-icon.png" alt=""></span>
+							<span class="list-span list-span-mg">131</span>
+						</li>
+						<li>
+							<span class="icon">
+							<img src="images/chat-icon.png" alt="">
+							</span>
+							<span class="list-span">14</span>
+						</li>
+					</ul>
+				</div>
+				<div class="maine-reviews">
+					<h3 class="h3">Самуил</h3>
+					<span>13 октября 2011</span>
+					<p class="post">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+				</div>
+				<div class="maine-reviews">
+					<h3 class="h3">Лилия Семёновна</h3>
+					<span>14 октября 2011</span>
+					<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+				</div>
+				<div class="maine-reviews">
+					<h3 class="h3">Лилия Семёновна</h3>
+					<span>14 октября 2011</span>
+					<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+				</div>
+			</div>	
+		</div>
+		<div class="question-form">
+			<div class="main">
+				<div class="">
+					<textarea id="textarea" name="text"></textarea>
+				</div>
+				<div>
+				<input onclick="newElement()" class="submit" type="submit" value="Написать консультанту">
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

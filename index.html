@@ -3,116 +3,99 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>consultant</title>
+	<title>PageManager</title>
 	<link rel="stylesheet" href="css/all.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript"> 
-	/*$(document).ready*/
-	 function newElement() {
-var post = document.createElement("p");
-  post.classList.add('post')а;
-var textarea = document.getElementById("textarea").value;
-  if (textarea === '') {
-   alert("You must write something!");
-  } else {
-   var t = document.createTextNode(textarea);
-   post.appendChild(t);
-  }
-document.getElementById("textarea").value = "";
-  
- var div = document.createElement("div");
-  div.classList.add('maine-reviews');
-  div.appendChild(post);
- var review = document.getElementById('reviews');
-  review.appendChild(div);
-}
-	</script>
+	<script src="js/base.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="main avatar">
-			<div class="avatar-header clearfix">
-				<h2 class="h2">Вероника Ростова</h2>
-				<span>Менеджер по продажам</span>
-				<div class="avatar-box">
-					<p class="avatar-box-p">Подберу для вас самые лучшие предложения.</br>
-					Мои услуги абсолютно бесплатны</p>
-				</div>
-				<table  align="right"> 
+<div class="wrapper">
+	<header>
+		<div class="clearfix">
+		    <img class="img-manager" src="images/avatar.png" alt="avatar">
+		    <div class="name">
+				<h2>Вероника Ростова</h2>
+				<span>Менеджер по продажам</span>			
+			</div>	
+			<div class="info">
+					<p class="info__post">Подберу для вас самые лучшие предложения.<br>Мои услуги абсолютно бесплатны</p>
+			</div>	
+		</div>	
+	</header>
+	<section class="table-info clearfix">
+		<table> 
 					<thead> 
 						<tr> 
 							<td></td> 
-							<td>Услуги</td>  
+							<td>Услуг</td>  
 						</tr> 
 					</thead> 
 					<tbody> 
 						<tr> 
 							<td class="green-td">Ручное бронирование</td> 
-							<th>11</th> 
+							<td>11</td> 
 						</tr> 
 						<tr> 
 							<td class="blue-td1 ">Пакетные туры</td> 
-							<th>3</th>  
+							<td>3</td>  
 						</tr> 
 						<tr> 
 							<td class="blue-td2">Отели</td> 
-							<th>1</th> 
+							<td>1</td> 
 						</tr> 
 					</tbody>
 				 	<tfoot>
 					 	<tr> 
-							<th>Всего</th> 
-							<th>15</th> 
+							<td>Всего</td> 
+							<td>15</td> 
 						</tr> 
 				 	</tfoot> 
 				</table>
+	</section>
+	<section class="reviews">
+		<div class="main-reviews clearfix">
+			<h3>Последние отзывы</h3>
+			<a href="#">Все отзывы </a>
+			<ul class="main-reviews__list clearfix">
+				<li>
+					<span class="icon"></span>
+					<span class="text">131</span>
+				</li>
+				<li>
+					<span class="icon"></span>
+					<span class="text">14</span>
+				</li>
+			</ul>
+		</div>
+		<div class="post-reviews">
+			<div class="post-reviews__main">
+				<h4 class="h4">Самуил</h4>
+				<span>13 октября 2011</span>
+				<p class="post">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
 			</div>
-			<div id="reviews">
-				<div class="last-reviews clearfix">
-					<h2 class="h2">Последние отзывы</h2>
-					<a href="#">Все отзывы</a>
-					<ul class="list clearfix">
-						<li>
-							<span class="icon">
-								<img src="images/love-icon.png" alt=""></span>
-							<span class="list-span list-span-mg">131</span>
-						</li>
-						<li>
-							<span class="icon">
-							<img src="images/chat-icon.png" alt="">
-							</span>
-							<span class="list-span">14</span>
-						</li>
-					</ul>
-				</div>
-				<div class="maine-reviews">
-					<h3 class="h3">Самуил</h3>
-					<span>13 октября 2011</span>
-					<p class="post">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
-				</div>
-				<div class="maine-reviews">
-					<h3 class="h3">Лилия Семёновна</h3>
-					<span>14 октября 2011</span>
-					<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
-				</div>
-				<div class="maine-reviews">
-					<h3 class="h3">Лилия Семёновна</h3>
-					<span>14 октября 2011</span>
-					<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
-				</div>
-			</div>	
+			<div class="post-reviews__main">
+				<h4 class="h4">Лилия Семёновна</h4>
+				<span>14 октября 2011</span>
+				<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+			</div>
+			<div class="post-reviews__main">
+				<h4 class="h4">Лилия Семёновна</h4>
+				<span>14 октября 2011</span>
+				<p class="post">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+			</div>
+		</div>		
+	</section>
+</div>
+	<footer>
+		<div class="wrapper">
+			<div class="question-form">
+				<div class="main">
+					<form>
+					<input id="textarea" name="text">
+					<input id="submit" type="button" value="Написать консультанту" onclick="newElement()" >
+					</form>
+				</div>			
+			</div>
 		</div>
-		<div class="question-form">
-			<div class="main">
-				<div class="">
-					<textarea id="textarea" name="text"></textarea>
-				</div>
-				<div>
-				<input onclick="newElement()" class="submit" type="submit" value="Написать консультанту">
-				</div>
-			</div>			
-		</div>
-	</div>
+	</footer>
 </body>
 </html>
